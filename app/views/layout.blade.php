@@ -3,11 +3,30 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 <title>BlutzBytes</title>
-<link href="css/style.css" rel="stylesheet" type="text/css" />
+{{ HTML::style('css/style.css'); }}
+{{ HTML::script('js/jquery-1.10.2.min.js'); }}
+
+
+<script>
+	$(document).ready(function() {
+     
+         <?php if (Session::has('message')) { ?>
+             alertMsg(); 
+         <?php 	} ?>
+
+        function alertMsg(){
+        var message = "<?php echo Session::get('message'); ?>";
+        alert(message);
+        <?php Session::forget('message'); ?>
+        }
+
+	});
+		
+</script>
 </head>
 
 <body>
-<div id="topPan"><a href="index.html"><img src="images/logo.gif" title="Green Solutions" alt="Green Solutions" width="204" height="57" border="0"/></a>
+<div id="topPan"><a href="index.html"><img src="<?php echo asset('images/logo.gif')?>" title="Green Solutions" alt="Green Solutions" width="204" height="57" border="0"/></a>
 	<ul><!--Navigation Top-->
 		<li><span>Home</span></li>
 		<li><a href="#">About us</a></li>
@@ -21,17 +40,17 @@
   <div id="leftPan" style="width:270px">
     	<div id="ourblog">
 			<h2>System</h2>
-			<p>Desktop publishing</p>
+			<p>TimeIn/TimeOut</p>
 			<a href="#">&nbsp;</a>
 		</div>
         <div id="possib">
 			<h2>Reports</h2>
-			<p>Desktop publishing</p>
+			<p>Daily,Weekly</p>
 			<a href="#">&nbsp;</a>
 		</div>
 		<div id="solution">
 			<h2>Settings</h2>
-			<p>Desktop publishing</p>
+			<p>Configuration</p>
 			<a href="#">&nbsp;</a>
 		</div><!--leftPan-->
   </div><!--bodyPan-->
@@ -39,48 +58,6 @@
   	<div id="rightbodyPan" style="width:900px;height:auto;" >
 		<!--CONTENT HERE-->
 			@yield('content')
-			<div id="leftTable" style="width:400px;position:absolute;left:0;">
-			<table class="systemTable">
-				<th>Computer #</th>
-				<th>Time-In</th>
-				<th>Current Time</th>
-				<th>Status</th>		
-				<?php 
-				  for($count=1;$count<=$data['computer_count'];$count++){ 
-				 ?>
-					<tr>
-						<td>Computer <?php echo $count; ?></td>
-						<td></td>
-						<td></td>
-						<td></td>					
-					</tr>
-				  <?php if ($count == 50) { break; } } //end for ?>
-			</table>
-			</div><!--leftTable-->
-			<?php if($data['computer_count'] > 50) { 
-			
-			?>
-			<div id="rightTable" style="width:400px;position:absolute;right:70px;">
-			<table class="systemTable">
-				<th>Computer #</th>
-				<th>Time-In</th>
-				<th>Current Time</th>
-				<th>Status</th>		
-				<?php 
-				  for($count2=51;$count2<=$data['computer_count'];$count2++){ 
-				 ?>
-					<tr>
-						<td>Computer <?php echo $count2; ?></td>
-						<td></td>
-						<td></td>
-						<td></td>					
-					</tr>
-				  <?php } //end for ?>
-			</table>
-			<?php } ?>
-			</div><!--rightTable-->
-		
-		
 		<!--CONTENT END-->
 	
   	</div><!--rightbodyPan-->
