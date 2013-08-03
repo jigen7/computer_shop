@@ -24,6 +24,13 @@ class SystemController extends BaseController {
 	public function showWelcome()
 	{
 		return View::make('hello');
+        /*
+                 for($count = 1;$count<=100;$count++){
+            $status = new Status;
+            $status->id = $count;
+            $status->save();
+        }
+         */
 	}
 
 

@@ -41,7 +41,7 @@
       <file leaf-file-name="SystemController.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/SystemController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="0" selection-start="519" selection-end="783" vertical-scroll-proportion="0.55258125">
+            <state line="31" column="9" selection-start="952" selection-end="952" vertical-scroll-proportion="0.93499047">
               <folding />
             </state>
           </provider>
@@ -59,7 +59,7 @@
       <file leaf-file-name="system.blade.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/system.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="48" selection-start="88" selection-end="88" vertical-scroll-proportion="-1.9615384">
+            <state line="4" column="0" selection-start="41" selection-end="41" vertical-scroll-proportion="-2.6153846">
               <folding />
             </state>
           </provider>
@@ -68,7 +68,7 @@
       <file leaf-file-name="layout.blade.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/layout.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="7" selection-start="100" selection-end="100" vertical-scroll-proportion="-3.9230769">
+            <state line="110" column="0" selection-start="3214" selection-end="3214" vertical-scroll-proportion="-3.9230769">
               <folding />
             </state>
           </provider>
@@ -390,7 +390,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layout.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="7" selection-start="100" selection-end="100" vertical-scroll-proportion="-3.9230769">
+        <state line="110" column="0" selection-start="3214" selection-end="3214" vertical-scroll-proportion="-3.9230769">
           <folding />
         </state>
       </provider>
@@ -404,14 +404,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/system.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="48" selection-start="88" selection-end="88" vertical-scroll-proportion="-1.9615384">
+        <state line="4" column="0" selection-start="41" selection-end="41" vertical-scroll-proportion="-2.6153846">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/SystemController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="0" selection-start="519" selection-end="783" vertical-scroll-proportion="0.55258125">
+        <state line="31" column="9" selection-start="952" selection-end="952" vertical-scroll-proportion="0.93499047">
           <folding />
         </state>
       </provider>

@@ -1,13 +1,13 @@
 <?php
 
 
-class Settings extends Eloquent{
+class Status extends Eloquent{
 
 	/**
 	 * The database table used by the model.
 	 *
 	 * @var string
 	 */
-	protected $table = 'm_settings';
+	protected $table = 'computer_status';
 	public $timestamps = false;
 }
