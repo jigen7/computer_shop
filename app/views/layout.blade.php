@@ -4,8 +4,9 @@
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 <title>BlutzBytes</title>
 {{ HTML::style('css/style.css'); }}
+{{ HTML::style('css/jquery-ui.css'); }}
 {{ HTML::script('js/jquery-1.10.2.min.js'); }}
-
+{{ HTML::script('js/jquery-ui.js'); }}
 
 <script>
 	$(document).ready(function() {
@@ -26,7 +27,7 @@
 </head>
 
 <body>
-<div id="topPan"><a href="index.html"><img src="<?php echo asset('images/logo.gif')?>" title="Green Solutions" alt="Green Solutions" width="204" height="57" border="0"/></a>
+<div id="topPan"><a href="index.html"><img src="<?php echo asset('images/logo.gif')?>"  width="204" height="57" border="0"/></a>
 	<ul><!--Navigation Top-->
 		<li><span>Home</span></li>
 		<li><a href="#">About us</a></li>
@@ -36,7 +37,7 @@
 	</ul>
 </div>
 
-<div id="bodyPan" style="margin-top:20px;width:1200px">
+<div id="bodyPan" style="margin-top:20px;width:1200px;">
   <div id="leftPan" style="width:270px">
     	<div id="ourblog">
 			<h2>System</h2>
@@ -54,7 +55,7 @@
 			<a href="#">&nbsp;</a>
 		</div><!--leftPan-->
   </div><!--bodyPan-->
-  <div id="rightPan" style="right:0;width:920px;height:1300px;background:none;">
+  <div id="rightPan" style="right:0;width:920px;height:1400px;background:none;">
   	<div id="rightbodyPan" style="width:900px;height:auto;" >
 		<!--CONTENT HERE-->
 			@yield('content')

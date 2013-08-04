@@ -131,3 +131,5 @@ ul{list-style-type:none;}
 
 .systemTable{ width:400px;}
 .systemTable th{ text-align:left;}
+.fontGreen { color:green; font-weight: bold }
+.fontRed { color:red;  font-weight: bold }
