@@ -3,8 +3,6 @@
 @section('content')
 <script>
 	$(document).ready(function() {
-     
-
 		
 		$( ".btnTimein" ).click(function() {
            var id = this.id.split('_')[1];
@@ -31,7 +29,8 @@
 		   var url = 'http://localhost/blutzbytes/public/system/timeout/comp_id/'+id;
           $( "#dialog-confirm-timeout" ).dialog({
                resizable: false,
-               height:140,
+               height:300,
+			   width:300,
                modal: true,
                buttons: {
                  "Proceed": function() {
@@ -117,8 +116,38 @@
                  <p><span class="ui-icon ui-icon-alert" style="float: left; margin: 0 7px 20px 0;"></span>Are you sure?</p>
             </div>
 			
-			<div id="dialog-confirm-timeout" style="display:none">
-                 <p><span class="ui-icon ui-icon-alert" style="float: left; margin: 0 7px 20px 0;"></span>Are you sure?</p>
+			<div id="dialog-confirm-timeout" style="display:none;" >
+				<table>
+					<tr>
+						<td>Time - In Time : </td>
+						<td>
+					</tr>
+					<tr>
+						<td>Current Time Spent : </td>
+						<td>
+					</tr>
+					<tr>
+						<td>Computed Total : </td>
+						<td>
+					</tr>
+				
+				</table>
+				
+				
+				
+				 <form class="clear">
+                    <fieldset>
+                       <label for="name">Deduct Minutes : </label> 
+                             <input type="text" name="name" id="name" class="text ui-widget-content ui-corner-all" style="width:50px;" />
+							 <br>
+					   <label for="name">Deduct Total : </label> 
+                             <input type="text" name="name" id="name" class="text ui-widget-content ui-corner-all" style="width:50px;margin-left:20px;" />
+
+                       </fieldset>
+                  </form>
+		          <p><span class="ui-icon ui-icon-alert" style="float: left; margin: 0 7px 20px 0;"></span>Are you sure?</p>
             </div>
+			
+			
 
 @stop
