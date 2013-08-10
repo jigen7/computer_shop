@@ -28,7 +28,9 @@ Route::get('system', 'SystemController@Index');
 Route::get('system/index', 'SystemController@Index');
 Route::get('system/timein/comp_id/{comp_id}', 'SystemController@Timein');
 Route::get('system/timeout/comp_id/{comp_id}', 'SystemController@Timeout');
-Route::get('report', 'ReportController@Index');
+Route::get('system/computeinitial/comp_id/{comp_id}', 'SystemController@ComputeInitial');
+Route::get('reports', 'ReportController@Index');
 Route::get('settings', 'SettingsController@Index');
+Route::get('settings/index', 'SettingsController@Index');
 
 

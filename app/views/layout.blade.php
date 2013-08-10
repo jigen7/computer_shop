@@ -5,8 +5,10 @@
 <title>BlutzBytes</title>
 {{ HTML::style('css/style.css'); }}
 {{ HTML::style('css/jquery-ui.css'); }}
+{{ HTML::style('css/jquery-ui-timepicker-addon.css'); }}
 {{ HTML::script('js/jquery-1.10.2.min.js'); }}
 {{ HTML::script('js/jquery-ui.js'); }}
+{{ HTML::script('js/jquery-ui-timepicker-addon.js'); }}
 
 <script>
 	$(document).ready(function() {
@@ -29,11 +31,14 @@
 <body>
 <div id="topPan"><a href="index.html"><img src="<?php echo asset('images/logo.gif')?>"  width="204" height="57" border="0"/></a>
 	<ul><!--Navigation Top-->
+			<!--
 		<li><span>Home</span></li>
+
 		<li><a href="#">About us</a></li>
 		<li><a href="#">Services</a></li>
 		<li><a href="#">Client</a></li>
 		<li><a href="#">Contact</a></li>
+		-->
 	</ul>
 </div>
 
@@ -42,20 +47,20 @@
     	<div id="ourblog">
 			<h2>System</h2>
 			<p>TimeIn/TimeOut</p>
-			<a href="#">&nbsp;</a>
+			<a href="<?php echo URL::to('system');?>">&nbsp;</a>
 		</div>
         <div id="possib">
 			<h2>Reports</h2>
 			<p>Daily,Weekly</p>
-			<a href="#">&nbsp;</a>
+			<a href="<?php echo URL::to('reports');?>">&nbsp;</a>
 		</div>
 		<div id="solution">
 			<h2>Settings</h2>
 			<p>Configuration</p>
-			<a href="#">&nbsp;</a>
+			<a href="<?php echo URL::to('settings');?>">&nbsp;</a>
 		</div><!--leftPan-->
   </div><!--bodyPan-->
-  <div id="rightPan" style="right:0;width:920px;height:1400px;background:none;">
+  <div id="rightPan" style="right:0;width:920px;height:1500px;background:none;">
   	<div id="rightbodyPan" style="width:900px;height:auto;" >
 		<!--CONTENT HERE-->
 			@yield('content')
