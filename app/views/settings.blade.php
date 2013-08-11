@@ -1,6 +1,18 @@
 @extends('layout')
 
 @section('content')
+<script>
+	$(document).ready(function() {
+
+        $('#computer_number').keyup(function() {
+				this.value = this.value.replace(/[^0-9\.]/g,'');
+		});
+		
+		$('#price_per_min').keyup(function() {
+				this.value = this.value.replace(/[^0-9\.]/g,'');
+		});
+	});
+</script>
 <span class="pageHeader">Settings</span>
 <br><br>
 <form method="put">

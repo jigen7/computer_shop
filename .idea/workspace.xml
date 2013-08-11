@@ -32,7 +32,7 @@
       <file leaf-file-name="settings.blade.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/settings.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="5" selection-start="514" selection-end="514" vertical-scroll-proportion="-13.730769">
+            <state line="23" column="5" selection-start="546" selection-end="546" vertical-scroll-proportion="-13.730769">
               <folding />
             </state>
           </provider>
@@ -43,7 +43,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state line="300" column="0" selection-start="11569" selection-end="11569" vertical-scroll-proportion="-15.038462">
               <folding>
-                <marker date="1376067780312" expanded="true" signature="4382:4620" placeholder="{...}" />
+                <marker date="1376155864499" expanded="true" signature="4382:4620" placeholder="{...}" />
               </folding>
             </state>
           </provider>
@@ -359,7 +359,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="44" column="0" selection-start="1069" selection-end="1069" vertical-scroll-proportion="0.0">
           <folding>
-            <marker date="1376067780312" expanded="true" signature="4382:4620" placeholder="{...}" />
+            <marker date="1376155864499" expanded="true" signature="4382:4620" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -429,7 +429,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="300" column="0" selection-start="11569" selection-end="11569" vertical-scroll-proportion="-15.038462">
           <folding>
-            <marker date="1376067780312" expanded="true" signature="4382:4620" placeholder="{...}" />
+            <marker date="1376155864499" expanded="true" signature="4382:4620" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -443,7 +443,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/settings.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="5" selection-start="514" selection-end="514" vertical-scroll-proportion="-13.730769">
+        <state line="23" column="5" selection-start="546" selection-end="546" vertical-scroll-proportion="-13.730769">
           <folding />
         </state>
       </provider>
